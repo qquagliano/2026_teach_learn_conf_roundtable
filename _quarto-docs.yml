@@ -50,6 +50,8 @@ format:
     fontenc: T1
     # NOTE: Code opts
     highlight-style: a11y
+    execute:
+      echo: false
     # NOTE: Fig and tbl opts
     fig-align: center
     cap-location: top

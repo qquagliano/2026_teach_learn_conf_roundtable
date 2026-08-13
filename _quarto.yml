@@ -6,4 +6,3 @@ project:
 metadata-files:
   - ./resources/yaml/_website_opts.yml
   - ./resources/yaml/_filters_shortcodes.yml
-  - ./resources/yaml/_reveal_opts.yml

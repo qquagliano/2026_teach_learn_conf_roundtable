@@ -1,0 +1,88 @@
+---
+# SECTION: Bibliography opts
+# bibliography: "./refs/refs.bib"
+# cite-method: citeproc
+# citeproc: true
+# csl: "../../resources/bibs/apa-cv.csl"
+# link-citations: true
+# link-bibliography: true
+suppress-bibliography: true
+---
+
+```{r}
+#| lst-label: lst-r-libraries
+#| lst-cap: "R libraries"
+
+base::library(package = kableExtra)
+base::library(package = knitr) # NOTE: For document rendering
+base::library(package = quarto) # NOTE: For document framework
+knitr::write_bib(
+  x    = base::.packages(),
+  file = "./refs/r_packages.bib"
+)
+```
+
+```{r}
+#| lst-label: lst-knitr-opts
+#| lst-cap: "Knitr options"
+
+base::options(knitr.kable.NA = "-")
+```
+
+# Accessibility {#sec-accessibility}
+
+You can obtain a digital copy of this handout on the FTLC Conference Website or
+by following the QR code below.
+
+The digital copy of this document is designed to be friendly to assistive
+technologies and software. Please contact me at
+[QuagliaQ@gvsu.edu](mailto:QuagliaQ@gvsu.edu) with any issues
+
+*QR CODE HERE*
+
+# Assumptions Surrounding Tests {#sec-assumptions}
+
+## Agreeable Assumptions {#sec-agree-on}
+
+*Some reasonable and straightforward factual statements about tests*
+
+- Summative, timed, proctored, and closed-note exams are still one of the most
+  **popular** ways to test knowledge in higher education
+- There is a long history and **precedence** to using this format of exam
+- Exams in this format are among the most **secure** way to administers to assess
+  knowledge
+
+## Debatable Assumptions {#sec-debatable}
+
+*Some subjective statements about tests*
+
+- Exams are more **anxiety-inducing** than other forms of assessment
+- Timed exams risk being **biased** against students who process slower or those
+  with test anxiety
+- Exams **stifle** creative problem solving or broader approaches to solutions
+
+## Controversial Assumptions {#sec-controversial}
+
+*Some statements that I will give you tools to explore in your own tests*
+
+- Traditional exams still have **value and accuracy** in gauging something about
+  the knowledge of a student
+- While there will always be an element of bias, an exam can be made and
+  re-examined to be **reasonably fair** to all students
+- When responsibly designed and planned, a test can **strengthen relationships**
+  between a student and faculty member
+
+# Understanding Test Item Metrics {#sec-test-metrics}
+
+**"Difficulty"**
+
+- Each question has $P$ or the proportion of students that got a question
+  correct, e.g. $P = 0.80$ means 80% of students got a question correct
+- Higher $P \rightarrow$ easier question
+
+**"Discrimination"**
+
+- How well does a question correlate to the test as a whole? Usually given as
+  $r_{pbis}$ or the point-biserial correlation, e.g. $r_{pbis} = 0.60$ means a
+  high degree of correlation with the test
+- Higher, positive $r_{pbis}$ greater discrimination
