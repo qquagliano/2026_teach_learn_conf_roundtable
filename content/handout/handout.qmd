@@ -72,7 +72,23 @@ technologies and software. Please contact me at
 - When responsibly designed and planned, a test can **strengthen relationships**
   between a student and faculty member
 
-# Understanding Test Item Metrics {#sec-test-metrics}
+# Before the Test {#sec-before}
+
+## Best Practices for (Humbly) Designing Test Questions {#sec-humble}
+
+- *Always* have a clear, specific reference/citation to where a correct answer
+  is pulled from - to textbook, lecture notes, etc. Consider including this on
+  the test itself
+- Review questions before each test administration, even if unchanged since last
+  time
+-
+
+# After the Test {#sec-after}
+
+{{< important "In general, try to make decisions about individual items, not the
+test as a whole." >}}
+
+## Understanding Test Item Metrics {#sec-test-metrics}
 
 **"Difficulty"**
 
@@ -86,3 +102,26 @@ technologies and software. Please contact me at
   $r_{pbis}$ or the point-biserial correlation, e.g. $r_{pbis} = 0.60$ means a
   high degree of correlation with the test
 - Higher, positive $r_{pbis}$ greater discrimination
+
+**"Subjective Content Relevance"**
+
+- Was a question about a central, learning objective-related concept? Or a
+  footnote?
+- How many times was this concept covered, and in how many different mediums
+
+## Responding to Test Item Metrics {#sec-responding}
+
+- **Red flag items:** those that are both difficult ($P < 0.30$) and poorly
+  discriminating ($r_{pbis} < 0.20$); examine each with subjective content
+  relevance - does this question capture the student's knowledge in this domain
+  well?
+
+- **Options for responding:**
+  - "Dropping" a test item: remove it from the test entirely, but hurts those
+    who got it right; most conservative solution
+  - "Nullifying" a test item: giving full credit to several or all possible
+    choices, giving a "freebie" to all students; most generous solution
+  - "Curving" the test as a whole: provides all students with a boost, but is
+    primarily focused on a certain average or grade outcome; indifferent to
+    actual question performance
+  - Ignore it
