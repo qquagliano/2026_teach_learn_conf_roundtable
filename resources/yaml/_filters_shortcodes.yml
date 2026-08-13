@@ -1,0 +1,9 @@
+# NOTE: Paths are relative to project root
+
+filters:
+  - ./resources/lua/links.lua
+  - quarto
+  - reveal-header
+
+shortcodes:
+  - ./resources/lua/important.lua

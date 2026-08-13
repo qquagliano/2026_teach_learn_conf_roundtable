@@ -1,0 +1,37 @@
+% SECTION: Metadata for tagging and accessibility
+\DocumentMetadata
+{
+  pdfversion = 2.0,
+  pdfstandard = {
+    UA-2,
+    % Disable other standards, as can hinder accessibility
+    % A-4F,
+    % X-6
+  },
+  % language = en-US, % For TexLive after 06/01
+  lang = en-US,
+  tagging = on,
+  tagging-setup = {
+    math/setup={mathml-SE,mathml-AF},
+    extra-modules = verbatim-alt
+  },
+  xmp = true,
+}
+% SECTION: Quarto defaults
+\documentclass[
+  $for(babel-otherlangs)$
+  $babel-otherlangs$,
+  $endfor$
+  $if(babel-lang)$
+  $babel-lang$,
+  $endif$
+  $if(fontsize)$
+  $fontsize$,
+  $endif$
+  $if(papersize)$
+  $papersize$paper,
+  $endif$
+  $for(classoption)$
+  $classoption$$sep$,
+  $endfor$
+]{$documentclass$}

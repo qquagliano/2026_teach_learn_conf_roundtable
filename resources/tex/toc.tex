@@ -1,0 +1,39 @@
+$if(toc)$
+$if(toc-title)$
+\renewcommand*\contentsname{$toc-title$}
+$endif$
+$if(beamer)$
+\begin{frame}[allowframebreaks]
+  $if(toc-title)$
+  \frametitle{$toc-title$}
+  $endif$
+  \setcounter{tocdepth}{$toc-depth$}
+  \tableofcontents
+\end{frame}
+$else$
+{
+  $if(colorlinks)$
+  % NOTE: Specific hypersetup just for toc link coloring
+  \hypersetup{
+    linkcolor=$if(toccolor)$$toccolor$$else$$endif$,
+    pdfborder={0 0 0},
+    pdfborderstyle={/S/U/W 0},
+  }
+  $endif$
+  \setcounter{tocdepth}{$toc-depth$}
+  \begin{customtcolorbox} % NOTE: Setting tcolorbox as defined in header.tex
+    \tableofcontents
+  \end{customtcolorbox}
+}
+$endif$
+$endif$
+$if(lof)$
+\begin{customtcolorbox} % NOTE: Setting tcolorbox as defined in header.tex
+  \listoffigures
+\end{customtcolorbox}
+$endif$
+$if(lot)$
+\begin{customtcolorbox} % NOTE: Setting tcolorbox as defined in header.tex
+  \listoftables
+\end{customtcolorbox}
+$endif$

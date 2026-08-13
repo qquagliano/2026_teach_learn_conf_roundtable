@@ -1,0 +1,9 @@
+project:
+  render:
+    - ./index.qmd
+
+format:
+  # NOTE: Basic HTML Theme
+  html:
+    output-file: "index"
+    format-links: false

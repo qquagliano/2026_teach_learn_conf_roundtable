@@ -1,0 +1,14 @@
+.direnv/
+.quarto/
+_site/
+site_libs/
+*_cache/
+*_files/
+
+/.quarto/
+
+**/*.quarto_ipynb
+*.gls
+*.glo
+*.glg
+*.ist

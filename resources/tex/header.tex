@@ -1,0 +1,41 @@
+% SECTION: KOMAscript settings for creating header and footer
+\usepackage[headsepline = 1.5pt, footsepline = 1.5pt]{scrlayer-scrpage}
+\setkomafont{pagenumber}{\bfseries}
+\setkomafont{pagehead}{\bfseries}
+\setkomafont{pagefoot}{\itshape}
+\lohead*{PSY-101: Introductory Psychology}
+\rohead*{\pagemark}
+\cofoot*{“I don't mind not knowing. It doesn't scare me.” ― Richard P. Feynman }
+
+% SECTION: Special symbols and math
+\usepackage{bbding} % NOTE: For checkmarks with \Checkmark
+\usepackage{mathtools, amsthm} % NOTE: General math tools
+\usepackage[normalem]{ulem} % NOTE: Dashed underlines
+
+% SECTION: Double-spacing and indents
+\usepackage{setspace} % NOTE: Allows for specifying spaces
+% \usepackage{indentfirst} % NOTE: Indent first paragraph
+
+% SECTION: Multiple column content
+\usepackage{multicol}
+
+% SECTION: Box for vocab words
+\newcommand*{\mybox}[1]{\textcolor{gvblue}{\framebox{\strut #1}}}
+
+% SECTION: Fontawesome Icons
+\usepackage{fontawesome5}
+
+% SECTION: Nice table of contents box
+\usepackage[many]{tcolorbox}
+\tcbuselibrary{breakable}
+
+\newtcolorbox{customtcolorbox}{
+  colback=gray!10,
+  % colframe=gvblue,
+  colframe=black!,
+  enhanced = true,
+  breakable = true,
+  skin first=enhanced,
+  skin middle=enhanced,
+  skin last=enhanced,
+}

@@ -1,0 +1,139 @@
+% Options for packages loaded elsewhere
+$passoptions.latex()$
+%
+$doc-class.tex()$
+
+% SECTION: Start - Custom Settings 1
+
+% NOTE: Color settings
+\usepackage[table]{xcolor}
+\usepackage{etoolbox}
+\usepackage{booktabs}
+\definecolor{gvblue}{HTML}{0032A0}
+\renewcommand\thesection{\color{gvblue}\arabic{section}}
+
+% NOTE: For listings
+\usepackage{listings}
+\usepackage{etoolbox}
+\ifcsmacro{Shaded}{
+  \renewenvironment{Shaded}{
+    \tagpdfparaOff
+    \begin{snugshade}
+    }{
+    \end{snugshade}
+    \tagpdfparaOff
+}}{}
+
+% SECTION: End - Custom Settings 1
+
+$if(beamerarticle)$
+\usepackage{beamerarticle} % needs to be loaded first
+$endif$
+\usepackage{xcolor}
+$if(geometry)$
+\usepackage[$for(geometry)$$geometry$$sep$,$endfor$]{geometry}
+$endif$
+\usepackage{amsmath,amssymb}
+$--
+$-- section numbering
+$--
+$if(numbersections)$
+\setcounter{secnumdepth}{$if(secnumdepth)$$secnumdepth$$else$5$endif$}
+$else$
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+$endif$
+$fonts.latex()$
+$font-settings.latex()$
+$common.latex()$
+$after-header-includes.latex()$
+$hypersetup.latex()$
+
+$before-title.tex()$
+
+% SECTION: Start Custom Settings 2
+
+% NOTE: Enable glossaries
+\usepackage[style=treegroup,automake]{glossaries-extra}
+\makeglossaries
+
+% NOTE: Bleeding edge forms code
+\usepackage{l3pdffield-testphase}[font=LiberationSans]
+\ExplSyntaxOn
+
+% NOTE: Enforcing LiberationSans embedding
+\pdfmanagement_add:nee{Catalog/AcroForm/DR/Font}
+{F\pdffeedback~fontname\font}
+{\pdffeedback~fontobjnum\font \c_space_tl 0 \c_space_tl R}
+
+% NOTE: Hijack TextField command from hyperref
+\makeatletter
+\def\@TextField[#1]#2{
+  \LayoutTextField{
+
+  }{
+    \pdffield_textfield:n{name=#2,#1,font=F\pdffeedback~fontname\font}
+  }
+}
+\makeatother
+
+% NOTE: Hijack CheckBox command from hyperref
+\makeatletter
+\def\@CheckBox[#1]#2{
+  \LayoutCheckField{
+
+  }{
+    \setlength{\fboxsep}{0pt}\fbox{\pdffield_checkbox:n{name=#2,#1}}\quad
+  }
+}
+\makeatother
+
+\ExplSyntaxOff
+
+% NOTE: Right margin frame
+\usepackage{background}
+
+% SECTION: End Custom Settings 2
+
+$title.tex()$
+
+\begin{document}
+\backgroundsetup{contents={}}
+$before-body.tex()$
+
+$for(include-before)$
+$include-before$
+
+$endfor$
+
+$toc.tex()$
+
+% NOTE: Manual pagebreak after TOC always
+\pagebreak
+
+$if(linestretch)$
+\setstretch{$linestretch$}
+$endif$
+$if(has-frontmatter)$
+
+\mainmatter
+$endif$
+
+$body$
+
+$before-bib.tex()$
+
+$if(has-frontmatter)$
+\backmatter
+$endif$
+$if(nocite-ids)$
+\nocite{$for(nocite-ids)$$it$$sep$, $endfor$}
+$endif$
+$biblio.tex()$
+
+$for(include-after)$
+$include-after$
+
+$endfor$
+$after-body.tex()$
+
+\end{document}

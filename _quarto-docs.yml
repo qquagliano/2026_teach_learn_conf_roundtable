@@ -1,0 +1,61 @@
+project:
+  render:
+    - ./content/**/*.qmd
+
+format:
+  # NOTE: PDF Notes
+  pdf:
+    # NOTE: PDF opts
+    toc-title: "Table of Contents"
+    toc: false
+    toc-depth: 3
+    lof: false
+    lot: false
+    number-depth: 3
+    number-sections: false
+    keep-tex: false
+    keep-md: false
+    # NOTE: LaTeX opts
+    include-in-header:
+      - file: "./resources/tex/header.tex"
+    include-before-body:
+      - file: "./resources/tex/before_body.tex"
+    template: ./resources/tex/template.tex
+    template-partials:
+      - ./resources/tex/doc-class.tex
+      - ./resources/tex/toc.tex
+    # NOTE: Rendering opts
+    engine: knitr
+    documentclass: article
+    pdf-engine: lualatex
+    geometry: "margin=1in"
+    papersize: letter
+    output-ext: pdf
+    # NOTE: Link opts
+    colorlinks: true
+    linkcolor: gvblue
+    toccolor: black
+    filecolor: gvblue
+    urlcolor: gvblue
+    citecolor: gvblue
+    # NOTE: Font and language opts
+    mainfont: Liberation Sans
+    fontsize: 12pt
+    microtypeoptions:
+      - protrusion = true
+      - expansion = true
+    hyperrefoptions:
+      - pdfpagemode=UseOutlines
+    lang: en-US
+    fontenc: T1
+    # NOTE: Code opts
+    highlight-style: a11y
+    # NOTE: Fig and tbl opts
+    fig-align: center
+    cap-location: top
+    fig-cap-location: top
+    tbl-cap-location: top
+    fig-pos: H
+    tbl-pos: H
+    fig-width: 6
+    fig-height: 3

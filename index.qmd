@@ -1,0 +1,27 @@
+---
+title: "PSY-300 Weekly Lectures"
+---
+
+[Week 1 Slides](./_site/weekly_content/week_1_scientific_thinking/Chapter Lecture/ch_1_lecture_dark.html)
+
+[Week 2 Slides](./_site/weekly_content/week_2_research_sources/Chapter Lecture/ch_2_lecture_dark.html)
+
+[Week 3 Slides](./_site/weekly_content/week_3_claims_and_validity/Chapter Lecture/ch_3_lecture_dark.html)
+
+[Week 4 Slides](./_site/weekly_content/week_4_ethics/Chapter Lecture/ch_4_lecture_dark.html)
+
+[Week 5 Slides](./_site/weekly_content/week_5_measurement/Chapter Lecture/ch_5_lecture_dark.html)
+
+[Week 6
+Slides](./_site/weekly_content/week_6_surverys_observational_designs/Chapter Lecture/ch_6_lecture_dark.html)
+
+[Week 7 Slides](./_site/weekly_content/week_7_sampling/Chapter Lecture/ch_7_lecture_dark.html)
+
+[Week 8 Slides](./_site/weekly_content/week_8_bivariate_correlation/Chapter Lecture/ch_8_lecture_dark.html)
+
+<!-- [Week 9 Slides](./weekly_content/) -->
+<!-- [Week 10 Slides](./weekly_content/) -->
+<!-- [Week 11 Slides](./weekly_content/) -->
+<!-- [Week 12 Slides](./weekly_content/) -->
+<!-- [Week 13 Slides](./weekly_contena/) -->
+<!-- [Week 14 Slides](./weekly_content/) -->

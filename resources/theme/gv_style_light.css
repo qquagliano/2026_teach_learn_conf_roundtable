@@ -1,0 +1,44 @@
+.reveal.smaller .slides h1 {
+  font-size: 65px;
+}
+
+.reveal.smaller .slides h2 {
+  font-size: 55px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.reveal.smaller .slides h3 {
+  font-size: 45px;
+}
+
+.reveal.smaller .slides h4 {
+  font-size: 40px;
+}
+
+.reveal .footer {
+  color: #0032A0;
+}
+
+.reveal a {
+  text-decoration: underline dotted;
+}
+
+.reveal div.sourceCode pre code {
+  font-size: 35px;
+  font-family: Liberation Sans;
+}
+
+.reveal .fragment.highlight-current-custom.current-fragment {
+  color: #0032A0;
+}
+
+:root {
+  --r-main-font: Liberation Sans;
+  --r-header-font: Liberation Sans;
+}
+
+u.dotted {
+  border-bottom: 1px dashed #999;
+  text-decoration: none;
+}

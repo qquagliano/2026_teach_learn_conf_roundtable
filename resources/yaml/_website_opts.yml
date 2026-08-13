@@ -1,0 +1,20 @@
+# NOTE: Paths are relative to project root
+
+website:
+  title: "Undergraduate Research Methods in Psychology"
+  description: "Undergraduate Research Methods in Psychology"
+  search: true
+  bread-crumbs: true
+  navbar:
+    left:
+      - href: index.qmd
+        text: Index
+  sidebar:
+    search: true
+    style: "docked"
+
+theme:
+  light: ./resources/theme/gv_theme_light.scss
+  dark: ./resources/theme/gv_theme_dark.scss
+
+format-links: false
