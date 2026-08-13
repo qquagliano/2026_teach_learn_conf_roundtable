@@ -1,7 +1,7 @@
 project:
   type: website
   execute-dir: file
-  output-dir: _site
+  output-dir: docs
 
 metadata-files:
   - ./resources/yaml/_website_opts.yml
