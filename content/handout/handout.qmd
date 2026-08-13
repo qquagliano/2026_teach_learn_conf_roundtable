@@ -38,7 +38,7 @@ The digital copy of this document is designed to be friendly to assistive
 technologies and software. Please contact me at
 [QuagliaQ@gvsu.edu](mailto:QuagliaQ@gvsu.edu) with any issues
 
-*QR CODE HERE*
+![QR Code](./imgs/qr-code.png){fig-alt="A QR code to a digital copy of the handout"}
 
 # Before the Test {#sec-before}
 
