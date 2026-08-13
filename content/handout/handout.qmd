@@ -72,7 +72,7 @@ technologies and software. Please contact me at
 # After the Test {#sec-after}
 
 In general, try to make decisions about individual items, not the test as a
-whole.
+whole. Think of each individual question as a test in and of itself.
 
 ## Understanding Test Item Metrics {#sec-test-metrics}
 
@@ -111,3 +111,7 @@ whole.
     primarily focused on a certain average or grade outcome; indifferent to
     actual question performance
   - Ignore it
+
+- Consider a **test wrapper**: An activity that requests corrections to the test
+  and debriefs feelings around it. This can heal frustrations and give points
+  for engaging with a poor performance rather than ignoring.
