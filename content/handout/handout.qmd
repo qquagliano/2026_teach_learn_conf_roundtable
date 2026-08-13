@@ -40,53 +40,39 @@ technologies and software. Please contact me at
 
 *QR CODE HERE*
 
-# Assumptions Surrounding Tests {#sec-assumptions}
-
-## Agreeable Assumptions {#sec-agree-on}
-
-*Some reasonable and straightforward factual statements about tests*
-
-- Summative, timed, proctored, and closed-note exams are still one of the most
-  **popular** ways to test knowledge in higher education
-- There is a long history and **precedence** to using this format of exam
-- Exams in this format are among the most **secure** way to administers to assess
-  knowledge
-
-## Debatable Assumptions {#sec-debatable}
-
-*Some subjective statements about tests*
-
-- Exams are more **anxiety-inducing** than other forms of assessment
-- Timed exams risk being **biased** against students who process slower or those
-  with test anxiety
-- Exams **stifle** creative problem solving or broader approaches to solutions
-
-## Controversial Assumptions {#sec-controversial}
-
-*Some statements that I will give you tools to explore in your own tests*
-
-- Traditional exams still have **value and accuracy** in gauging something about
-  the knowledge of a student
-- While there will always be an element of bias, an exam can be made and
-  re-examined to be **reasonably fair** to all students
-- When responsibly designed and planned, a test can **strengthen relationships**
-  between a student and faculty member
-
 # Before the Test {#sec-before}
 
-## Best Practices for (Humbly) Designing Test Questions {#sec-humble}
+## Cover Your Bases
 
 - *Always* have a clear, specific reference/citation to where a correct answer
   is pulled from - to textbook, lecture notes, etc. Consider including this on
   the test itself
+- If the content of lectures/readings changed, ensure questions are subtracted
+  or added
 - Review questions before each test administration, even if unchanged since last
   time
--
+
+## Know Your Audience
+
+- Consider surveying or polling your students about the preferences/anxieties
+  about different types of assignments; consider reasonable modifications
+- Give adequate warning and reminders of impending tests
+- Have a plan for the, "How do I study?" question; and make sure you believe in
+  it!
+
+## Write Good Questions {#sec-write-good-questions}
+
+- Look at stated learning objectives, or big header topics; considered repeated
+  vocabulary; avoid "niche" or "nitpicky" questions
+- Avoid using words in questions above 12th grade reading level, unless they
+  were taught as vocabulary
+- Ideate using concrete artifacts used in lessons, e.g., readings, notes,
+  worksheets, etc.; avoid coming up with things off the top of your head
 
 # After the Test {#sec-after}
 
-{{< important "In general, try to make decisions about individual items, not the
-test as a whole." >}}
+In general, try to make decisions about individual items, not the test as a
+whole.
 
 ## Understanding Test Item Metrics {#sec-test-metrics}
 
